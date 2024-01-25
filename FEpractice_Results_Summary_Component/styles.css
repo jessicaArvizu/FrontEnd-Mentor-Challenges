@@ -1,0 +1,165 @@
+/* Colors */
+/* Primary*/
+/*Gradients*/
+/*Neutral*/
+@font-face {
+  font-family: HankenGrotesk;
+  src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: HankenGrotesk;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  font-family: HankenGrotesk;
+}
+.container .left {
+  padding: 5%;
+  text-align: center;
+  border-radius: 20px;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+.container .left .info {
+  margin-top: 0.5rem;
+  font-family: HankenGrotesk;
+}
+.container .left p {
+  font-size: 18px;
+}
+.container .left .info_text_lavender {
+  color: hsl(241, 100%, 89%);
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: HankenGrotesk;
+}
+.container .left .info_text_white {
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  margin-top: 1rem;
+  font-family: HankenGrotesk;
+}
+.container .left .left_score {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2.5rem auto;
+  text-align: center;
+}
+.container .left .left_score .left_big_score {
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+  font-size: 4rem;
+  margin: 0 auto;
+}
+.container .right {
+  padding: 5%;
+}
+.container .right .right_scores .score {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0.5rem;
+  font-size: 18px;
+}
+.container .right .right_scores .score .right_score_black {
+  color: hsl(224, 30%, 27%);
+}
+.container .right .right_scores .score .right_score_gray {
+  color: hsla(224, 30%, 27%, 0.5);
+}
+.container .right .right_scores .score .score_icon {
+  display: flex;
+  align-items: center;
+}
+.container .right .right_scores .score .score_icon img {
+  margin-right: 5px;
+}
+.container .right .right_scores .score_reaction {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: hsla(0, 100%, 67%, 0.1);
+  color: hsl(0, 100%, 67%);
+}
+.container .right .right_scores .score_memory {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: hsla(39, 100%, 56%, 0.1);
+  color: hsl(39, 100%, 56%);
+}
+.container .right .right_scores .score_visual {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: hsla(234, 85%, 45%, 0.1);
+  color: hsl(234, 85%, 45%);
+}
+.container .right .right_scores .score_verbal {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: hsla(166, 100%, 37%, 0.1);
+  color: hsl(166, 100%, 37%);
+}
+.container .right .right_scores .right_button {
+  margin-top: 30px;
+  padding: 15px 30px;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  outline: none;
+  background-color: hsl(224, 30%, 27%);
+  width: 100%;
+  border-radius: 30px;
+}
+.container .right .right_scores .right_button:active {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px !important;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 540px !important;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 600px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 600px !important;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 600px !important;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

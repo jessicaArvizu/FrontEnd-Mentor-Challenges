@@ -1,0 +1,93 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+/* Colors */
+* {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  height: 100vh;
+  font-size: 18px;
+}
+body p {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  background-color: hsl(217, 54%, 11%);
+}
+main section .card {
+  overflow: hidden;
+  border-radius: 15px;
+  width: 300px;
+  border: none;
+  padding: 20px;
+  background-color: hsl(216, 50%, 16%);
+  color: hsl(0, 0%, 100%);
+}
+main section .card .card-img-top {
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+main section .card .card-body {
+  margin: 0;
+  padding: 0;
+}
+main section .card .card-body h1 {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+main section .card .card-body p {
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+}
+main section .card .card-body .card-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+main section .card .card-body .card-info .left-div .eth-icon {
+  color: hsl(178, 100%, 50%);
+  font-weight: 400;
+}
+main section .card .card-body .card-info .right-div .clk-icon {
+  color: hsl(215, 51%, 70%);
+}
+main section .card .card-body .divider-line {
+  color: hsl(215, 51%, 70%);
+}
+main section .card .card-body .creator-info .creator-avatar {
+  width: 30px;
+  border: solid 1px hsl(0, 0%, 100%);
+  border-radius: 100%;
+  margin-right: 15px;
+}
+main section .card .card-body .creator-info .creator-text {
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+}
+main section .card .card-body .creator-info .creator-text .creator-name {
+  font-weight: 300;
+  color: hsl(0, 0%, 100%);
+}
+
+footer {
+  background-color: hsl(217, 54%, 11%);
+}
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+footer .attribution a {
+  color: hsl(215, 51%, 70%);
+}
+
+/*# sourceMappingURL=style.css.map */

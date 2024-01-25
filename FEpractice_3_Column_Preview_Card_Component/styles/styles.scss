@@ -1,0 +1,175 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+$font-family-Big-Shoulders: 'Big Shoulders Display', cursive;
+$font-family-Lexend-Deca: 'Lexend Deca', sans-serif;
+
+/* Colors */
+//Primary
+$brightOrange: hsl(31, 77%, 52%);
+$darkCyan: hsl(184, 100%, 22%);
+$veryDarkCyan: hsl(179, 100%, 13%);
+
+//Neutral 
+$transparentWhite: hsla(0, 0%, 100%, 0.75); //Paragraphs.
+$veryLightGray: hsl(0, 0%, 95%); //Background, Headings, Buttons.
+
+* {
+    font-family: $font-family-Lexend-Deca;
+    color: $veryLightGray;
+    font-size: 15px;
+}
+
+main {
+    background-color: $veryLightGray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    section {
+
+        .main-container {
+            margin: 0;
+            padding: 0;
+            width: fit-content;
+            max-width: 800px;
+
+            .row {
+                .cols {
+                    padding: 40px;
+
+                    .col-container {
+                        margin: 0;
+                        padding: 0;
+                        width: 100%;
+                        height: 100%;
+                        position: relative;
+                        margin-bottom: 100px;
+                    }
+
+                    p {
+                        color: $transparentWhite;
+                        margin-bottom: 50px;
+                    }
+
+                    h1 {
+                        font-family: $font-family-Big-Shoulders;
+                        margin: 30px 0;
+                    }
+
+                    .btn-div {
+                        position: absolute;
+                        bottom: 3px;
+                        width: 100%;
+
+                        .btn {
+                            border-radius: 40px;
+                            padding: 8px 30px;
+                        }
+                    }
+                }
+
+                .sedan-col {
+                    background-color: $brightOrange;
+                    border-top-left-radius: 12px;
+                    border-bottom-left-radius: 12px;
+
+                    .learn-more-btn {
+                        color: $brightOrange;
+                        background-color: $veryLightGray;
+                        border: 2px solid $brightOrange;
+
+                        &:active,
+                        &:hover {
+                            background-color: $brightOrange;
+                            color: $veryLightGray;
+                            border: 2px solid $veryLightGray;
+                        }
+                    }
+                }
+
+                .suv-col {
+                    background-color: $darkCyan;
+
+                    .learn-more-btn {
+                        color: $darkCyan;
+                        background-color: $veryLightGray;
+                        border: 2px solid $darkCyan;
+
+
+                        &:active,
+                        &:hover {
+                            background-color: $darkCyan;
+                            color: $veryLightGray;
+                            border: 2px solid $veryLightGray;
+                        }
+                    }
+                }
+
+                .luxury-col {
+                    background-color: $veryDarkCyan;
+                    border-top-right-radius: 12px;
+                    border-bottom-right-radius: 12px;
+
+                    .learn-more-btn {
+                        color: $veryDarkCyan;
+                        background-color: $veryLightGray;
+                        border: 2px solid $veryDarkCyan;
+
+                        &:active,
+                        &:hover {
+                            background-color: $veryDarkCyan;
+                            color: $veryLightGray;
+                            border: 2px solid $veryLightGray;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+footer {
+    background-color: $veryLightGray;
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+
+        p{
+            color: $veryDarkCyan;
+        }
+
+        a {
+            color: hsl(228, 45%, 44%);
+        }
+    }
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    section {
+        margin: 30px;
+        .main-container{
+            .row{
+
+                .cols{
+                    .col-container{
+                        margin-bottom: 40px !important;
+                    }
+                }
+                .sedan-col{
+                    border-top-right-radius: 12px !important;
+                    border-top-left-radius: 12px !important;
+                    border-bottom-left-radius: 0px !important;
+                }
+
+                .luxury-col{
+                    border-bottom-left-radius: 12px !important;
+                    border-bottom-right-radius: 12px !important;
+                    border-top-right-radius: 0px !important;
+                }
+            }
+        }
+    }
+}

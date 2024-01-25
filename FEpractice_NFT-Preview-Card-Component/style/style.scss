@@ -1,0 +1,128 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+$font-face: 'Outfit', sans-serif;
+
+/* Colors */
+//Primary
+$softBlue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+
+//Neutral
+$veryDarkBlueBG: hsl(217, 54%, 11%); //Main Background
+$veryDarkBlueCard: hsl(216, 50%, 16%); //Card Background
+$veryDarkBlueLine: hsl(215, 32%, 27%); //Line
+$white: hsl(0, 0%, 100%);
+
+* {
+    font-family: $font-face;
+    font-weight: 400;
+}
+
+body {
+    height: 100vh;
+    font-size: 18px;
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    background-color: $veryDarkBlueBG;
+
+    section {
+        .card {
+            overflow: hidden;
+            border-radius: 15px;
+            width: 300px;
+            border: none;
+            padding: 20px;
+            background-color: $veryDarkBlueCard;
+            color: $white;
+
+            .card-img-top {
+                border-radius: 10px;
+                margin-bottom: 20px;
+            }
+
+            .card-body {
+                margin: 0;
+                padding: 0;
+
+
+                h1 {
+                    font-weight: 400;
+                    font-size: 1.2rem;
+                }
+
+                p {
+                    font-weight: 300;
+                    color: $softBlue;
+                }
+
+                .card-info {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 15px;
+
+                    .left-div {
+                        .eth-icon {
+                            color: $cyan;
+                            font-weight: 400;
+                        }
+                    }
+
+                    .right-div {
+                        .clk-icon {
+                            color: $softBlue;
+                        }
+                    }
+                }
+
+                .divider-line {
+                    color: $softBlue;
+                }
+
+                .creator-info {
+                    .creator-avatar {
+                        width: 30px;
+                        border: solid 1px $white;
+                        border-radius: 100%;
+                        margin-right: 15px;
+                    }
+
+                    .creator-text {
+                        font-weight: 300;
+                        color: $softBlue;
+
+                        .creator-name {
+                            font-weight: 300;
+                            color: $white;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+footer {
+    background-color: $veryDarkBlueBG;
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: $white;
+
+        a {
+            color:$softBlue;
+        }
+    }
+}

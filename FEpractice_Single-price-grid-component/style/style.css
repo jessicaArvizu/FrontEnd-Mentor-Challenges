@@ -1,0 +1,138 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+/* Colors */
+* {
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  height: 100vh;
+  font-size: 15px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  background-color: hsl(204, 43%, 93%);
+}
+main section .main-container {
+  border-radius: 12px;
+  overflow: hidden;
+  width: 600px;
+}
+main section .main-container .top-row {
+  padding: 30px;
+  background-color: white;
+  color: hsl(218, 22%, 67%);
+}
+main section .main-container .top-row h1 {
+  color: hsl(179, 62%, 43%);
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+main section .main-container .top-row h2 {
+  color: hsl(71, 73%, 54%);
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+main section .main-container .top-row p {
+  font-size: 15px;
+}
+main section .main-container .bottom-row {
+  color: hsl(204, 43%, 93%);
+}
+main section .main-container .bottom-row .left-col {
+  background-color: hsl(179, 62%, 43%);
+  padding: 35px;
+}
+main section .main-container .bottom-row .left-col .col-title {
+  font-weight: 700;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+main section .main-container .bottom-row .left-col .plan-group .plan-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main section .main-container .bottom-row .left-col .plan-group .plan-row .plan-price {
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
+  width: fit-content;
+  margin-right: 15px;
+}
+main section .main-container .bottom-row .left-col .plan-group .plan-row .plan-time {
+  color: hsl(204, 43%, 93%);
+  opacity: 0.5;
+  margin: 0;
+  width: fit-content;
+}
+main section .main-container .bottom-row .left-col .plan-perks {
+  color: white;
+  opacity: 0.8;
+  font-size: 0.9rem;
+  padding: 0;
+  margin: 4px;
+}
+main section .main-container .bottom-row .left-col .btn-sign-up {
+  color: white;
+  background-color: hsl(71, 73%, 54%);
+  border: none;
+  width: 100%;
+  font-weight: 700;
+  padding: 10px;
+  margin-top: 20px;
+}
+main section .main-container .bottom-row .left-col .btn-sign-up:hover {
+  cursor: pointer;
+  transform: scale(1.05) perspective(1px);
+}
+main section .main-container .bottom-row .right-col {
+  background-color: hsla(179, 62%, 43%, 0.8);
+  padding: 35px;
+}
+main section .main-container .bottom-row .right-col .col-title {
+  font-weight: 700;
+  color: white;
+  font-size: 20px;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+main section .main-container .bottom-row .right-col p {
+  color: white;
+  opacity: 0.5;
+  font-size: 0.9rem;
+  padding: 0;
+  margin: 0;
+}
+
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+footer .attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 768px) {
+  main section .main-container {
+    width: fit-content !important;
+    margin: 20px !important;
+  }
+}
+@media only screen and (max-width: 425px) {
+  main section .main-container {
+    width: fit-content !important;
+    margin: 20px !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

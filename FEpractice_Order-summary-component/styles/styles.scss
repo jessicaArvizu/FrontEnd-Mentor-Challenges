@@ -1,0 +1,220 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+$font-family: 'Red Hat Display', sans-serif;
+
+/* Colors */
+//Primary
+$paleBlue: hsl(225, 100%, 94%);
+$brightBlue: hsl(245, 75%, 52%);
+$brightBlueActive: hsla(245, 75%, 52%, .7);
+//Neutral
+$veryPaleBlue: hsl(225, 100%, 98%);
+$desaturatedBlue: hsl(224, 23%, 55%);
+$darkBlue: hsl(223, 47%, 23%);
+
+* {
+    font-family: $font-family;
+
+    p {
+        font-size: 16px;
+    }
+}
+
+body {
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    background-color: $paleBlue;
+    background-image: url('../images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% 40%;
+
+    section {
+        .main-container {
+            margin: 0;
+            padding: 0;
+            width: fit-content;
+            max-width: 400px;
+            border-radius: 20px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow: hidden;
+
+            .card-body {
+                padding: 10%;
+                color: $desaturatedBlue;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .card-title {
+                    font-weight: 700;
+                    font-size: 1.8rem;
+                    color: $darkBlue;
+                }
+
+                .plan-info {
+                    border-radius: 20px;
+                    background: $veryPaleBlue;
+                    margin-bottom: 25px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 20px;
+
+                    .plan-description {
+                        p {
+                            margin: 0;
+                            margin-right: 40px;
+                            padding: 0;
+                        }
+
+                        .plan-type {
+                            font-weight: 900;
+                            color: $darkBlue;
+                        }
+                    }
+
+                    .plan-change-link {
+                        font-weight: 700;
+                        color: $brightBlue;
+
+                        &:hover,
+                        &:active {
+                            color: $brightBlueActive;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .btn-proceed {
+                    background-color: $brightBlue;
+                    color: $paleBlue;
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 12px;
+                    font-weight: 700;
+                    margin-bottom: 20px;
+                    border: none;
+
+                    &:hover,
+                    &:active {
+                        background-color: $brightBlueActive;
+                        cursor: pointer;
+                    }
+                }
+
+                .btn-cancel {
+                    background-color: transparent;
+                    color: $desaturatedBlue;
+                    border: none;
+                    width: 100%;
+                    padding: 10px;
+                    font-weight: 700;
+
+                    &:hover,
+                    &:active {
+                        color: $darkBlue;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+
+        a {
+            color: hsl(228, 45%, 44%);
+        }
+    }
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+
+    main {
+        background-image: url('../images/pattern-background-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 100% 40%;
+
+        section {
+            margin: 20px;
+
+            .main-container {
+                padding: 10px;
+
+                .card-body {
+                    padding: 5% !important;
+
+                    .plan-info {
+                        padding: 10px !important;
+                    }
+                }
+            }
+
+            .plan-change-link {
+                font-size: 12px;
+            }
+
+            .btn-proceed,
+            .btn-cancel {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    main {
+        background-image: url('../images/pattern-background-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 100% 40%;
+
+        section {
+            margin: 20px;
+
+            .main-container {
+                padding: 10px;
+
+                .card-body {
+                    padding: 5% !important;
+
+                    .plan-info {
+                        padding: 10px !important;
+                    }
+                }
+            }
+
+            .plan-change-link {
+                font-size: 12px;
+            }
+
+            .btn-proceed,
+            .btn-cancel {
+                font-size: 12px;
+            }
+        }
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+
+}

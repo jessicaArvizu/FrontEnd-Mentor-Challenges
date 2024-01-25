@@ -1,0 +1,129 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+/* Colors */
+* {
+  font-family: "Lexend Deca", sans-serif;
+  color: hsl(0, 0%, 95%);
+  font-size: 15px;
+}
+
+main {
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+main section .main-container {
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+  max-width: 800px;
+}
+main section .main-container .row .cols {
+  padding: 40px;
+}
+main section .main-container .row .cols .col-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin-bottom: 100px;
+}
+main section .main-container .row .cols p {
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 50px;
+}
+main section .main-container .row .cols h1 {
+  font-family: "Big Shoulders Display", cursive;
+  margin: 30px 0;
+}
+main section .main-container .row .cols .btn-div {
+  position: absolute;
+  bottom: 3px;
+  width: 100%;
+}
+main section .main-container .row .cols .btn-div .btn {
+  border-radius: 40px;
+  padding: 8px 30px;
+}
+main section .main-container .row .sedan-col {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+main section .main-container .row .sedan-col .learn-more-btn {
+  color: hsl(31, 77%, 52%);
+  background-color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(31, 77%, 52%);
+}
+main section .main-container .row .sedan-col .learn-more-btn:active, main section .main-container .row .sedan-col .learn-more-btn:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+main section .main-container .row .suv-col {
+  background-color: hsl(184, 100%, 22%);
+}
+main section .main-container .row .suv-col .learn-more-btn {
+  color: hsl(184, 100%, 22%);
+  background-color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(184, 100%, 22%);
+}
+main section .main-container .row .suv-col .learn-more-btn:active, main section .main-container .row .suv-col .learn-more-btn:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+main section .main-container .row .luxury-col {
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+main section .main-container .row .luxury-col .learn-more-btn {
+  color: hsl(179, 100%, 13%);
+  background-color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(179, 100%, 13%);
+}
+main section .main-container .row .luxury-col .learn-more-btn:active, main section .main-container .row .luxury-col .learn-more-btn:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
+footer {
+  background-color: hsl(0, 0%, 95%);
+}
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+footer .attribution p {
+  color: hsl(179, 100%, 13%);
+}
+footer .attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  section {
+    margin: 30px;
+  }
+  section .main-container .row .cols .col-container {
+    margin-bottom: 40px !important;
+  }
+  section .main-container .row .sedan-col {
+    border-top-right-radius: 12px !important;
+    border-top-left-radius: 12px !important;
+    border-bottom-left-radius: 0px !important;
+  }
+  section .main-container .row .luxury-col {
+    border-bottom-left-radius: 12px !important;
+    border-bottom-right-radius: 12px !important;
+    border-top-right-radius: 0px !important;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
