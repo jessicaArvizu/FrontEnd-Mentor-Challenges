@@ -15,7 +15,7 @@ From crafting responsive web designs to tackling intricate UI components, each c
     - Live Site URL: [Netlify](https://luxury-caramel-8082a7.netlify.app)
 
 - Order Summary Card Component ☀️
-    - Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/order-summary-component-with-boostrap-and-sass-hF9DJ2HD2t)
+    - Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/order-summary-component-with-boostrap-and-sass-hF9DJ2HD2t)
     - Live Site URL: [Netlify](https://legendary-sawine-4c1892.netlify.app/)
 
 - Product Preview Card Component 🌵
